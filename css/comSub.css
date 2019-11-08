@@ -1,0 +1,450 @@
+/**!
+ * 河北省公共资源交易中心-二级通用
+ * author: xyang;
+ * date:2018-11-05
+ */
+
+/* 通用 */
+
+/* 左侧导航 */
+
+.ewb-sidebar {
+    position: absolute;
+    top: 206px;
+    left: 50%;
+    margin-left: -794px;
+    width: 171px;
+    height: 529px;
+    background: url("../images/sidebar_bg.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/sidebar_bg.png*/ no-repeat;
+}
+
+.ewb-sidebar-items {
+    margin-left: 94px;
+    width: 59px;
+}
+
+.ewb-sidebar-items>li {
+    margin-top: 20px;
+}
+
+.ewb-sidebar-items>li:first-child {
+    margin-top: 0;
+}
+
+.ewb-sidebar-items>li>a {
+    display: block;
+    padding: 12px 12px 0;
+    line-height: 18px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #d13d3d;
+    background: url("../images/sidebar_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/sidebar_icon.png*/ no-repeat;
+}
+
+.ewb-sidebar-items>li.current>a {
+    color: #fff;
+    background: url("../images/sidebar_iconh.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/sidebar_iconh.png*/ center no-repeat;
+}
+
+@media (min-width: 979px) and (max-width: 1600px) {
+    .ewb-sidebar {
+         margin-left: -679px;
+    }
+}
+
+/* 中间背景白 */
+
+.ewb-main {
+    position: relative;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    height: 562px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+/* 底 部 */
+
+.ewb-footer {
+    position: static;
+}
+
+/* 当前位置 */
+
+.ewb-local {
+    padding-left: 60px;
+    line-height: 58px;
+    color: #666;
+    background: url("../images/local_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/local_icon.png*/ 30px 18px no-repeat;
+}
+
+.ewb-local a {
+    color: #666;
+}
+
+.ewb-local span {
+    color: #e04545;
+}
+
+/* left */
+
+.ewb-left {
+    margin-left: 20px;
+}
+
+/* 左侧树 */
+
+.wb-tree-items {
+    margin-top: 10px;
+}
+
+.wb-tree-items:first-child {
+    margin-top: 0;
+}
+
+.wb-tree-tt {
+   color:#d24747;
+}
+
+.wb-tree-node,
+.wb-tree-sub a{
+    display:block;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #d24747;
+    cursor: pointer;
+    background-color: #fadede;
+}
+
+.wb-tree-iconl {
+    float: left;
+    width: 10px;
+    height: 20px;
+    margin-top: 11px;
+    margin-left:43px;
+    margin-right:43px;
+    background:url("../images/tree_left_arrow.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_left_arrow.png*/ no-repeat;
+}
+
+.wb-tree-sub{
+    display: none;
+    padding: 0 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+}
+
+.wb-tree-item {
+    padding-left: 60px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.wb-tree-item:first-child {
+    border-top: 0;
+}
+
+.wb-tree-item>a{
+    padding-left: 16px;
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #333;
+    background: url("../images/tree_item_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_item_icon.png*/ left center no-repeat;
+}
+
+.wb-tree-item.cur>a,
+.wb-tree-item>a:hover{
+    font-weight: bold;
+    color: #e04545;
+    background: url("../images/tree_item_iconh.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_item_iconh.png*/ left center no-repeat;
+}
+
+.wb-tree-item>a:active{
+    background-color:#519ff4;
+    color:#fff;
+}
+
+.current .wb-tree-iconl {
+    width: 20px;
+    height: 10px;
+    margin-top: 16px;
+    margin-left: 38px;
+    margin-right: 38px;
+    background: url("../images/tree_left_arrowh.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_left_arrowh.png*/ no-repeat;
+}
+
+.current .wb-tree-node,
+.wb-tree-items:hover .wb-tree-node {
+    background-color: #e04545;
+}
+
+.current .wb-tree-tt,
+.wb-tree-items:hover .wb-tree-tt {
+    color: #fff;
+}
+
+.wb-tree-items:hover .wb-tree-iconl {
+    background:url("../images/tree_left_arrow_active.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_left_arrow_active.png*/ no-repeat;
+}
+
+.current.wb-tree-items:hover .wb-tree-iconl {
+    background:url("../images/tree_left_arrowh.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_left_arrowh.png*/ no-repeat;
+}
+
+.current .wb-tree-sub{
+    display: block;
+}
+
+.wb-tree-iconl.last {
+    visibility: hidden;
+}
+
+@media (min-width: 979px) and (max-width: 1600px) {
+    .wb-tree-iconl {
+        margin-right: 15px;
+    }
+    .current .wb-tree-iconl {
+        margin-right: 10px;
+    }
+    /*左侧树*/
+    .wb-tree-item {
+        padding-left: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .wb-tree-iconl {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    .current .wb-tree-iconl {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .wb-tree-item {
+        padding-left: 0;
+    }
+    .wb-tree-item>a {
+        padding-left: 12px;
+    }
+    .wb-tree-node, .wb-tree-sub a,
+    .wb-tree-item>a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+	.for_scroll{
+		overflow-x:scroll;
+	}
+    .ewb-local {
+    /*  手机端的位置*/
+	min-width:340px;
+        padding-left: 33px;
+        font-size: 12px;
+        background: url("../images/local_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/local_icon.png*/ 13px 18px no-repeat;
+    }
+    .ewb-left {
+        margin-right: 20px;
+    }
+}
+
+/* right */
+
+.ewb-right {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 19px;
+    border: 1px solid #d8d8d8;
+    border-top: 3px solid #fadede;
+}
+
+@media (max-width: 767px) {
+    .ewb-right {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* 信息列表 */
+
+.ewb-com-item {
+    padding-left: 10px;
+    height: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    background: url("../images/sub_item_icon.jpg")/*tpa=http://www.hebpr.cn/hbjyzx/images/sub_item_icon.jpg*/ left center no-repeat;
+}
+
+.ewb-com-block {
+    margin-right: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ewb-com-block a {
+    color: #333;
+}
+
+.ewb-com-item span {
+    margin-top: -46px;
+    color: #999;
+}
+
+/* 分页 */
+
+.ewb-page {
+	
+    text-align: center;
+}
+
+.ewb-page-items {
+    margin-top: 17px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.ewb-page-li {
+    min-width: 36px;
+    *width: 36px;
+    margin-right: 4px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    float: left;
+}
+
+.ewb-page-li>a {
+    display: block;
+    color: #555;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    border: 1px solid #dfdfdf;
+}
+
+.ewb-page-li.current>a {
+    border: 0;
+    color: #0030cc;
+}
+
+.ewb-page-li.ewb-page-noborder>span {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    border: 0;
+    color: #666;
+    font-family: "Simsun";
+}
+
+.ewb-page-num {
+    *width: 60px;
+}
+
+.ewb-page-li.ewb-page-num>span {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.ewb-page-input {
+    width: 38px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    line-height: 24px;
+    color: #666;
+    outline: none;
+    vertical-align: top;
+    *margin-top: -1px;
+}
+
+.ewb-page-hover {
+    *width: 60px;
+}
+
+.ewb-page-hover>a {
+    font-family: "Simsun";
+}
+
+.ewb-page-go {
+    margin-left: 2px;
+}
+
+.ewb-page-hover:hover>a,
+.ewb-page-go:hover>a {
+    color: #fff;
+    background-color: #999;
+    border-color: #999;
+}
+
+.ewb-page-go>a {
+    font-size: 12px;
+    padding: 0 6px;
+}
+
+.ewb-page-goto {
+    margin-right: 0;
+}
+
+.ewb-page-li.ewb-page-goto>span {
+    padding: 0 6px 0 0;
+    text-align: right;
+}
+
+.ewb-page-inpt {
+    margin-left: -2px;
+}
+
+.ewb-page-li.ewb-page-ellipsis>span {
+    padding: 0 17px 0 16px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #555;
+}
+
+/* 机器人 */
+
+.ewb-robot {
+    position: absolute;
+    bottom: 0;
+    right: -63px;
+    z-index: -1;
+}
+
+.ewb-robot-warn {
+    position: absolute;
+    bottom: 36px;
+    right: 20px;
+    display: none;
+    padding: 7px 16px 0;
+    width: 130px;
+    height: 63px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #62b7cf;
+}
+
+.ewb-robot-warn i {
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    display: block;
+    margin-top: -6px;
+    width: 6px;
+    height: 11px;
+    background: url("../images/robot_arrow.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/robot_arrow.png*/ no-repeat;
+}
+
+.layui-layer {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+}

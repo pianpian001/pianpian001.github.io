@@ -1,0 +1,964 @@
+/* yui3 reset.css */
+
+html {
+    color: #000;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+
+    border: 0;
+    vertical-align: top;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+iframe {
+    display: block;
+}
+
+
+
+/* yui3 fonts */
+
+/* yui3 fonts */
+
+body {
+    font: 14px/1.231 "Microsoft YaHei", arial, helvetica, clean, sans-serif;
+    min-width: 1200px;
+    color: #333;
+    background: url("../images/bg.jpg")/*tpa=http://www.hebpr.cn/hbjyzx/images/bg.jpg*/;
+}
+
+@media (max-width: 1199px) {
+    body {
+        min-width: auto;
+    }
+}
+
+select,
+input,
+button,
+textarea {
+    font: 99% arial, helvetica, clean, sans-serif
+}
+
+table {
+    font-size: inherit;
+    font: 100%
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* utilities */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.l {
+    float: left !important;
+}
+
+.r {
+    float: right !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+
+/* placeholder */
+
+input[type=text]::-ms-clear,
+input[type=password]::-ms-reveal{
+    display: none;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+    color: #999;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+    color: #999;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+    color: #999;
+}
+
+.placeholder {
+    color: #999;
+}
+
+/* css3效果 */
+
+.trans {
+    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+
+/**
+ * 以下可追加项目中的公共样式，
+ * 比如body上进行全局的文字设置（字体，大小，行高），全局a链接的基本状态定义，
+ * 适合页面的栅格系统
+ * 页面公共头尾部分等
+ */
+
+.ewb-ml10 {
+    margin-left: 10px;
+}
+
+.ewb-mt10 {
+    margin-top: 10px;
+}
+
+.ewb-pr {
+    position: relative;
+}
+
+/* header */
+
+.ewb-reg-node {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 19px;
+    padding-left: 40px;
+    width: 323px;
+    height: 26px;
+    z-index: 1;
+    background: url("../images/srh_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/srh_icon.png*/ left center no-repeat;
+}
+
+.input-placeholder {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 26px;
+    line-height: 26px;
+    color: #999;
+    z-index: -1;
+    cursor: text;
+}
+
+.ewb-reg-txt {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    color: #999;
+    background: transparent;
+}
+
+.ewb-guide-btn {
+    width: 110px;
+    height: 46px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 21px;
+    background-color: #62b7cf;
+}
+
+.ewb-guide-btn:hover {
+    background-color: #45a2bc;
+}
+
+.ewb-header {
+    height: 233px;
+    background: url("../images/header_bg.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/header_bg.png*/ center top no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.ewb-logo {
+    margin-top: 36px;
+    margin-left: 9px;
+}
+
+.ewb-logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.ewb-srh {
+    margin-top: 74px;
+    margin-right: 13px;
+    width: 100%;
+    height: 44px;
+    border-radius: 21px;
+    background-color: #fff;
+    box-shadow:1px 1px 9px 0px rgba(0,0,0,0.2)
+}
+
+.ewb-srh .ewb-reg-node {
+    margin-left: 20px;
+    margin-right: 96px;
+    width: auto;
+}
+
+.ewb-srh .ewb-guide-btn {
+    margin-top: -38px;
+    width: 90px;
+}
+
+/* 头部日期不动 */
+
+.ewb-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 38px;
+    line-height: 38px;
+    z-index: 9;
+}
+
+.ewb-top-date {
+    margin-right: 72px;
+}
+
+.ewb-top-date span {
+   margin: 7px 11px 0 0;
+}
+
+/* 头部日期不动 end */
+
+/* 底部不动 */
+
+.ewb-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ewb-footer.static {
+    position: static;
+}
+
+.ewb-footer.smallscreen {
+    position: static;
+    margin-top: 755px;
+}
+
+.ewb-ft-sel {
+    padding-top: 11px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.ewb-ft-ul {
+    margin-left: -75px;
+}
+
+.ewb-ft-li {
+    float: left;
+    width: 33.33%;
+}
+
+.ewb-ft-block {
+    margin-left: 75px;
+}
+
+.ewb-ft-select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+/* chosen插件css重置 */
+
+/* .chosen-container-single .chosen-single { */
+    /* padding: 0 0 0 20px; */
+    /* height: 30px; */
+    /* line-height: 30px; */
+    /* border: none; */
+    /* background-color: #e5e5e5; */
+    /* color: #666; */
+/* } */
+
+/* .chosen-container-single .chosen-single div { */
+    /* right: 7px; */
+/* } */
+
+/* .chosen-container-single .chosen-single div b { */
+    /* background: url("../images/drop_down.png") center no-repeat; */
+/* } */
+
+/* .chosen-container-active.chosen-with-drop .chosen-single div b { */
+    /* background: url("../images/drop_up.png") center no-repeat; */
+/* } */
+
+/* .chosen-container .chosen-drop { */
+    /* border: 0; */
+    /* background-color: #e5e5e5; */
+/* } */
+
+/* .chosen-container-single .chosen-drop { */
+    /* border-radius: 0; */
+/* } */
+
+/* .chosen-container-active.chosen-with-drop .chosen-single { */
+    /* border: 0; */
+/* } */
+
+/* chosen插件css重置 end */
+
+.ewb-ft-con {
+    height: 100px;
+    border-top: 1px solid #6c6c6c;
+    background-color: #777;
+}
+
+.ewb-ft-p {
+    padding-top: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.ewb-ft-p > a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.ewb-ft-p > span {
+    margin: 0 12px;
+}
+
+.ewb-ft-img  {
+    position: absolute;
+}
+
+.ewb-ft-img.pos1 {
+    top: 23px;
+    left: 202px;
+}
+
+.ewb-ft-img.pos2 {
+    top: 29px;
+    right: 143px;
+}
+
+@media (min-width: 979px) and (max-width: 1600px) {
+    .ewb-ft-img.pos1 {
+        left: 92px;
+    }
+    .ewb-ft-img.pos2 {
+        right: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .ewb-ft-img.pos1 {
+        left: 18px;
+    }
+    .ewb-ft-img.pos2 {
+        top: 13px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ewb-ft-ul {
+        margin: 0 20px;
+    }
+    .ewb-ft-li {
+        width: 100%;
+    }
+    .ewb-ft-block {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .ewb-ft-li:first-child .ewb-ft-block {
+        margin-top: 0;
+    }
+    .ewb-ft-con {
+        padding-bottom: 18px;
+        height: auto;
+    }
+}
+
+/* 移动设备头部 */
+
+.ewb-phone-header {
+    height: 160px;
+    background: url("../images/phone_header_bg.jpg")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_header_bg.jpg*/ no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.ewb-phone-logo {
+    padding: 19px 11px 0;
+    text-align: center;
+}
+
+.ewb-phone-logo img {
+    width: 100%;
+    max-width: 352px;
+}
+
+.ewb-phone-srh {
+    position: relative;
+    margin: 21px 30px 0;
+    height: 35px;
+}
+
+.ewb-phone-srh .ewb-reg-node {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 135px;
+    width: auto;
+    padding-left: 42px;
+    padding-right: 70px;
+    height: 35px;
+    opacity: .5;
+    border-radius: 15px;
+    background: url("../images/phone_srh_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_srh_icon.png*/ 18px center no-repeat #fff;
+    -webkit-background-size: 13px 13px;
+    background-size: 13px 13px;
+    box-shadow:0px 1px 9px 0px rgba(0,0,0,0.2);
+}
+
+.ewb-phone-srh .input-placeholder {
+    left: 42px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.ewb-phone-srh .ewb-reg-txt {
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.ewb-phone-btn {
+    width: 70px;
+    height: 35px;
+    margin-top: -35px;
+    margin-right: 57px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 15px;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    background-color: #62b7cf;
+}
+
+.ewb-phone-user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: url("../images/phone_user.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_user.png*/ no-repeat;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px 35px;
+    box-shadow:0px 3px 7px 0px rgba(0,0,0,0.21);
+}
+
+.ewb-phone-user-con {
+    position: absolute;
+    top: 46px;
+    left: -30px;
+    right: -30px;
+    padding: 8px 0 3px 0;
+    display: none;
+    border-top: 1px solid #62b7cf;
+    border-bottom: 1px solid #62b7cf;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.ewb-phone-user-arrow {
+    position: absolute;
+    top: -10px;
+    right: 42px;
+    width: 21px;
+    height: 10px;
+    background: url("../images/phone_arrow.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_arrow.png*/ no-repeat;
+    -webkit-background-size: 21px 10px;
+    background-size: 21px 10px;
+}
+
+.ewb-phone-user-item {
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.ewb-phone-user-item.last {
+    border-bottom: 0;
+}
+
+.ewb-phone-user-item>a {
+    display: block;
+    padding-left: 22.8%;
+    font-size: 14px;
+    color: #666;
+}
+
+.ewb-phone-user-item>a:hover {
+    color: #d13d3d;
+}
+
+.ewb-phone-user-item>a>i {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ewb-phone-user-item>a>i.icon1 {
+    margin-top: 6px;
+    margin-left: 1px;
+    margin-right: 49px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/phone_login_icon1.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_login_icon1.png*/ no-repeat;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+}
+
+.ewb-phone-user-item>a>i.icon2 {
+    margin-top: 15px;
+    margin-right: 48px;
+    width: 31px;
+    height: 24px;
+    background: url("../images/phone_login_icon2.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_login_icon2.png*/ no-repeat;
+    -webkit-background-size: 31px 24px;
+    background-size: 31px 24px;
+}
+
+.ewb-phone-user-item>a>i.icon3 {
+    margin-top: 13px;
+    margin-left: 3px;
+    margin-right: 47px;
+    width: 32px;
+    height: 30px;
+    background: url("../images/phone_login_icon3.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_login_icon3.png*/ no-repeat;
+    -webkit-background-size: 32px 30px;
+    background-size: 32px 30px;
+}
+
+.ewb-phone-user-item>a>i.icon4 {
+    margin-top: 12px;
+    margin-left: 3px;
+    margin-right: 51px;
+    width: 25px;
+    height: 29px;
+    background: url("../images/phone_login_icon4.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_login_icon4.png*/ no-repeat;
+    -webkit-background-size: 25px 29px;
+    background-size: 25px 29px;
+}
+
+.ewb-phone-nav {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.ewb-phone-nav-con1 {
+    position: relative;
+    margin-right: 19px;
+}
+
+.ewb-phone-nav-con2 {
+    position: relative;
+    display: none;
+    margin-left: 19px;
+}
+
+.ewb-phone-nav-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.ewb-phone-nav-item>a {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    color: #d13d3d;
+}
+
+.ewb-phone-nav-item>a>i {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.ewb-phone-nav-item>a>i.icon1 {
+    background: url("../images/phone_nav_icon1.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon1.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon1,
+.ewb-phone-nav-item:hover a>i.icon1 {
+    background: url("../images/phone_nav_icon1h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon1h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon2 {
+    background: url("../images/phone_nav_icon2.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon2.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon2,
+.ewb-phone-nav-item:hover a>i.icon2 {
+    background: url("../images/phone_nav_icon2h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon2h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon3 {
+    background: url("../images/phone_nav_icon3.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon3.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon3,
+.ewb-phone-nav-item:hover a>i.icon3 {
+    background: url("../images/phone_nav_icon3h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon3h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon4 {
+    background: url("../images/phone_nav_icon4.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon4.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon4,
+.ewb-phone-nav-item:hover a>i.icon4 {
+    background: url("../images/phone_nav_icon4h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon4h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon5 {
+    background: url("../images/phone_nav_icon5.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon5.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon5,
+.ewb-phone-nav-item:hover a>i.icon5 {
+    background: url("../images/phone_nav_icon5h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon5h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon6 {
+    background: url("../images/phone_nav_icon6.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon6.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon6,
+.ewb-phone-nav-item:hover a>i.icon6 {
+    background: url("../images/phone_nav_icon6h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon6h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>i.icon7 {
+    background: url("../images/phone_nav_icon7.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon7.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item.cur a>i.icon7,
+.ewb-phone-nav-item:hover a>i.icon7 {
+    background: url("../images/phone_nav_icon7h.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_icon7h.png*/ no-repeat;
+    -webkit-background-size: 45px 45px;
+    background-size: 45px 45px;
+}
+
+.ewb-phone-nav-item>a>span {
+    margin-top: 3px;
+    display: inline-block;
+    line-height: 27px;
+}
+
+.ewb-phone-nav-item.cur span,
+.ewb-phone-nav-item:hover span {
+    font-weight: bold;
+}
+
+.ewb-phone-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 15px;
+    height: 30px;
+}
+
+.ewb-phone-arrow.right {
+    right: -19px;
+    background: url("../images/phone_nav_arrowr.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_arrowr.png*/ no-repeat;
+    -webkit-background-size: 15px 30px;
+    background-size: 15px 30px;
+}
+
+.ewb-phone-arrow.left {
+    left: -19px;
+    background: url("../images/phone_nav_arrowl.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_nav_arrowl.png*/ no-repeat;
+    -webkit-background-size: 15px 30px;
+    background-size: 15px 30px;
+}
+
+/* footer */
+
+.ewb-phone-footer {
+    margin-top: 20px;
+}
+
+.ewb-phone-sel {
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+
+.ewb-phone-sel .ewb-ft-select {
+    background-color: #fff;
+}
+
+.ewb-phone-footer-con {
+    position: relative;
+    padding: 10px 16px 12px;
+    font-size: 12px;
+    background-color: #777;
+}
+
+.ewb-phone-footer-p {
+    line-height: 22px;
+    color: #fff;
+}
+
+.ewb-phone-icon {
+    display: inline-block;
+    margin-right: 7px;
+    width: 17px;
+    height: 18px;
+    vertical-align: top;
+    background: url("../images/phone_footer_icon.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/phone_footer_icon.png*/ left top no-repeat;
+    -webkit-background-size: 17px 18px;
+    background-size: 17px 18px;
+}
+
+.ewb-phone-img1 {
+    position: absolute;
+    top: 18px;
+    right: 46px;
+}
+
+.ewb-phone-img2 {
+    position: absolute;
+    top: 83px;
+    right: 36px;
+}
+
+.ewb-phone-img1 img {
+    width: 36px;
+    height: 45px;
+}
+
+.ewb-phone-img2 img {
+    width: 55px;
+    height: 28px;
+}
+
+
+
+ /* 新增吕伟  左侧树系列 */   
+.wb-tree-item.current>a{
+	font-weight: bold;
+    color: #e04545;
+    background: url("../images/tree_item_iconh.png")/*tpa=http://www.hebpr.cn/hbjyzx/images/tree_item_iconh.png*/ left center no-repeat;
+}
+
+#page{
+	margin-left:50px;
+}
+
+
+
+@media (max-width: 767px) {
+.lw_page_sn{
+	height:50px;
+	min-width:475px;
+	line-height:50px;
+}
+
+.lw_page_fr{
+   overflow:scroll;
+	
+}
+}
+
+
+
+
+
+
+
